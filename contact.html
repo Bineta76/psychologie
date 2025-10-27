@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Autres Prestations</title>
+  <title>Contact</title>
 
-  <!-- Bootstrap -->
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
   <!-- Navbar -->
-  <<nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <img src="assets/logo0.png" alt="Logo" style="height: 50px; margin-right: 10px;">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -23,34 +23,83 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link active fw-semibold" href="accueil.html">Accueil</a></li>
-          <li class="nav-item"><a class="nav-link active" href="Le cabinet.html">Le cabinet</a></li>
+          <li class="nav-item"><a class="nav-link" href="Le cabinet.html">Le cabinet</a></li>
           <li class="nav-item"><a class="nav-link" href="prestations.html">Prestations</a></li>
           <li class="nav-item"><a class="nav-link" href="autres prestations.html">Autres prestations</a></li>
-          <li class="nav-item"><a class="nav-link" href="prendre RDV.html">prendre RDV</a></li>
-          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="prendre RDV.html">Prendre RDV</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Contenu principal -->
-
+  <div class="container my-5">
 
     <h1 class="text-center mb-4">Contactez votre psychologue clinicien à Romescamps</h1>
 
-  <center> <p class="lead text-center"><p>Pour tout renseignement, vous pouvez nous contacter par mail ou en utilisant le formulaire ci-dessous.</p></center> 
-christophelambert-psychologue.fr
+    <div class="text-center mb-4">
+      <p class="lead">Pour tout renseignement, vous pouvez nous contacter par mail ou en utilisant le formulaire ci-dessous.</p>
+      <h4><a href="mailto:christophelambert-psychologue.fr">christophelambert-psychologue.fr</a></h4>
+      <p>18 rue de Bénarpré, 60220 Romescamps</p>
+    </div>
 
-   18 Rue de Bernapré
-60220 Romescamps
+    <!-- Google Maps -->
+    <div class="text-center mb-5">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2580.388652579429!2d1.7810610760138101!3d49.703484440865644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e74024a5713f01%3A0x660185a601b1cb43!2s18%20Rue%20de%20Bernapr%C3%A9%2C%2060220%20Romescamps!5e0!3m2!1sfr!2sfr!4v1761593862206!5m2!1sfr!2sfr" 
+        width="900" 
+        height="400" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
 
-Tél : 09 52 50 88 42 
+    <!-- Formulaire de contact -->
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h3>Contact</h3>
+        <form action="envoyer_formulaire.php" method="post">
+          <div class="mb-3">
+            <label class="form-label">Nom :</label>
+            <input type="text" name="nom" class="form-control" placeholder="Entrez votre nom" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Prénom :</label>
+            <input type="text" name="prenom" class="form-control" placeholder="Entrez votre prénom" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Adresse :</label>
+            <input type="text" name="adresse" class="form-control" placeholder="Entrez votre adresse" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Téléphone :</label>
+            <input type="tel" name="telephone" class="form-control" placeholder="Entrez votre téléphone" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email :</label>
+            <input type="email" name="email" class="form-control" placeholder="Entrez votre email" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Message :</label>
+            <textarea name="message" class="form-control" rows="4" placeholder="Votre message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+      </div>
+    </div>
 
-   
+  </div>
 
-<a href="accueil.html"></a> 
-
-<!-- ✅ FOOTER -->
-  <footer>
+  <!-- Footer -->
+  <footer class="text-center mt-5 py-3 bg-light">
     <p>&copy; 2025 Cabinet Christophe Lambert — Psychologue clinicien à Romescamps (Oise)</p>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

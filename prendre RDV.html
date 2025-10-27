@@ -3,14 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Autres Prestations</title>
+  <title>Prendre RDV - Cabinet Christophe Lambert</title>
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      line-height: 1.6;
+    }
+
+    nav.navbar {
+      background-color: #e3f2fd !important;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2, h3 {
+      color: #1a4d7a;
+      font-weight: 600;
+    }
+
+    footer {
+      background-color: #1a4d7a;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    .square {
+      border-radius: 10px;
+      transition: transform 0.2s;
+    }
+
+    .square:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- ✅ NAVBAR -->
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <img src="assets/logo0.png" alt="Logo" style="height: 50px; margin-right: 10px;">
@@ -22,86 +57,98 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active fw-semibold" href="accueil.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="accueil.html">Accueil</a></li>
           <li class="nav-item"><a class="nav-link" href="Le cabinet.html">Le cabinet</a></li>
           <li class="nav-item"><a class="nav-link" href="prestations.html">Prestations</a></li>
           <li class="nav-item"><a class="nav-link" href="autres prestations.html">Autres prestations</a></li>
-            <li class="nav-item"><a class="nav-link active " href="prendre RDV.html">prendre RDV</a></li>
+          <li class="nav-item"><a class="nav-link active text-primary fw-bold" href="prendre RDV.html">Prendre RDV</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <script>
-    fetch('navbar.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('navbar-container').innerHTML = data)
-      .catch(error => console.error("Erreur lors du chargement de la navbar :", error));
-  </script>
-
-  <!-- Contenu principal -->
-  
-
+  <!-- ✅ CONTENU PRINCIPAL -->
+  <div class="container my-5">
     <h1 class="text-center mb-4">Cabinet psychologue clinicien près de Grandvilliers</h1>
-
     <p class="lead text-center">Rendez-vous chez votre psychologue</p>
-    <center><h3>Prenez RDV</center></h3>
 
-<center><p>j'appuie sur le lien ci-dessous pour prendre rendez-vous en ligne :</p></center>
+    <h3 class="text-center">Prenez rendez-vous</h3>
+    <p class="text-center">
+      Cliquez sur le lien ci-dessous pour prendre rendez-vous en ligne :
+    </p>
 
-    <center><p></p></center>
+    <p class="text-center">
+      <a href="mailto:christophe.lambert@example.com" class="btn btn-primary">Prendre RDV par e-mail</a>
+    </p>
 
+    <p>
+      Christophe Lambert vous propose ses consultations en ligne.  
+      Pour ce faire, il vous suffit de le contacter par téléphone ou mail.  
+      Il vous proposera une plage horaire pour la séance. Si elle vous convient, il vous envoie alors un lien sur lequel 
+      vous devrez vous connecter à l’heure du rendez-vous.  
+      Votre ordinateur devra être équipé d’une webcam pour plus de confort.
+    </p>
 
+    <h2>Les tarifs</h2>
+    <p>
+      Les consultations au cabinet continuent d’être assurées, pour les personnes qui le souhaitent.  
+      Les enfants et adolescents sont reçus pendant une heure pour <strong>47 €</strong>.  
+      La consultation des adultes dure une heure et coûte <strong>60 €</strong>.
+    </p>
+    <p>
+      Pour toute consultation à domicile, il faut compter les frais kilométriques en plus (en fonction de la distance du déplacement), 
+      sauf pour les personnes souffrant d’un handicap les empêchant de se déplacer.
+    </p>
+    <p>
+      Selon les situations, Lambert Christophe propose des forfaits de prise en charge.  
+      L’établissement du Q.I et les bilans psychométriques pour enfants/adolescents (passation, analyse et restitution) sont à <strong>180 €</strong>.  
+      En cas de consultation à domicile, les frais kilométriques s’ajoutent.
+    </p>
 
+    <div class="text-center">
+      <img src="assets/logo8-200x200-300x300.jpeg" alt="Prendre RDV" class="img-fluid rounded">
+    </div>
+  </div>
 
+  <!-- ✅ CARRÉS ADRESSE + TÉLÉPHONES -->
+  <div class="container text-center my-5">
+    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 flex-wrap">
 
-
-
-Christophe Lambert vous propose ses consultations en ligne.
- Pour ce faire, il vous suffit de le contacter par téléphone ou mail. Il vous proposera une 
- plage horaire pour la séance. Si elle vous convient, il vous envoie alors un lien sur lequel 
- vous devrez vous connecter à l’heure du rendez-vous. Votre ordinateur devra être équipé d’une webcam pour plus de confort.</p> 
-
- <h2>Les tarifs</h2>
- <p>Les consultations au cabinet continuent d’être assurées, pour les personnes qui le souhaitent. Les enfants et adolescents sont reçus pendant une heure pour 47 euros. La consultation des adultes dure une heure et coûte 60 euros.
-
-Pour toute consultation à domicile, il faut compter les frais kilométriques en plus (en fonction de la distance du déplacement), sauf pour les personnes souffrant d’un handicap les empêchant de se déplacer.
-
-Selon les situations, Lambert Christophe propose des forfaits de prise en charge.
-L’établissement du Q.I, des bilans psychométriques pour les enfants et adolescents, avec passation, analyse et restitution est à 180 euros. Dans le cas d’une consultation à domicile, les frais kilométriques sont en plus.</p>
-<img src="assets/logo8-200x200-300x300.jpeg" class="d-block mx-auto mb-4" alt="Prendre RDV" style="max-width: 100%; height: auto;">
-
-
-  <!-- ✅ CARRÉS COLORÉS (Adresse + Téléphones) -->
-<div class="container text-center my-5">
-  <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 flex-wrap">
-
-  <!-- ✅ CARRÉS COLORÉS (Adresse + Téléphones) -->
-<div class="container text-center my-5">
-  <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 flex-wrap">
-
-    <!-- Carré adresse -->
-    <div class="square bg-primary p-3" style="transition: transform 0.2s;">
-      <p class="m-0 fw-bold text-white">
+      <!-- Carré adresse -->
+      <div class="square bg-primary p-3 text-white fw-bold">
         18 Rue de Bernapré<br>
         60220 Romescamps
-      </p>
+      </div>
+
+      <!-- Carré téléphone -->
+      <div class="square bg-success p-3 text-white fw-bold">
+        <a href="tel:0952508842" class="text-white text-decoration-none">Tél : 09 52 50 88 42</a><br>
+        <a href="tel:0667364153" class="text-white text-decoration-none">Port : 06 67 36 41 53</a>
+      </div>
     </div>
-
-    <!-- Carré téléphone avec deux numéros -->
-    <a href="tel:+33612345678" class="square bg-primary text-decoration-none p-3" style="transition: transform 0.2s;">
-      <p class="m-0 fw-bold text-white">
-        Tél : 09 52 50 88 42<br>
-        PORT : 06 67 36 41 53
-      </p>
-    </a>
-
   </div>
-</div>
- <!-- ✅ FOOTER -->
+
+  <!-- ✅ GOOGLE MAPS -->
+  <div class="container mb-5">
+    <div class="ratio ratio-16x9">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2580.388652579429!2d1.7810610760138101!3d49.703484440865644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e74024a5713f01%3A0x660185a601b1cb43!2s18%20Rue%20de%20Bernapr%C3%A9%2C%2060220%20Romescamps!5e0!3m2!1sfr!2sfr!4v1761593862206!5m2!1sfr!2sfr"
+        style="border:0;" 
+        allowfullscreen 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+
+  <!-- ✅ FOOTER -->
   <footer>
     <p>&copy; 2025 Cabinet Christophe Lambert — Psychologue clinicien à Romescamps (Oise)</p>
   </footer>
-</html>
+
+  <!-- ✅ BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+</html>
